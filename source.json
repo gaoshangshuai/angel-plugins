@@ -4,12 +4,12 @@
   "plugins": [
     {
       "pluginId": "youku",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "platform": "youku",
       "platformName": "优酷直播",
       "platformDescription": "优酷直播 live.youku.com",
-      "zipURL": "https://cdn.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/youku-1.0.0.zip",
-      "sha256": "727ce632a5facf01c3d20445d8bfc260d136fba673cb113fa84f3708fa8b3695",
+      "zipURL": "https://cdn.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/youku-1.0.1.zip",
+      "sha256": "3d5578ea56565c6adcc77b549bae968fed4526af047be6478ba7fe04d9a7a9e1",
       "auth": {
         "required": false,
         "credentialKinds": [],
@@ -21,25 +21,22 @@
           "status": "available"
         },
         "rooms": {
-          "status": "partial",
-          "reason": "列表接口待抓包填充，当前返回空列表"
+          "status": "available"
         },
         "playback": {
-          "status": "partial",
-          "reason": "取流接口待抓包填充，当前返回 UNSUPPORTED"
+          "status": "available"
         },
         "search": {
-          "status": "partial",
-          "reason": "暂只支持房间号直达"
+          "status": "available"
         },
         "roomDetail": {
-          "status": "partial"
+          "status": "available"
         },
         "liveState": {
-          "status": "partial"
+          "status": "available"
         },
         "shareResolve": {
-          "status": "partial"
+          "status": "available"
         }
       }
     }
