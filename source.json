@@ -8,7 +8,7 @@
       "platform": "youku",
       "platformName": "优酷直播",
       "platformDescription": "优酷直播 live.youku.com",
-      "zipURL": "https://cdn.jsdelivr.net/gh/YOUR_NAME/YOUR_REPO@main/youku-1.0.0.zip",
+      "zipURL": "https://cdn.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/youku-1.0.0.zip",
       "sha256": "727ce632a5facf01c3d20445d8bfc260d136fba673cb113fa84f3708fa8b3695",
       "auth": {
         "required": false,
