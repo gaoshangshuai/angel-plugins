@@ -1,0 +1,11 @@
+{
+  "sites": [
+    {
+      "key": "youku",
+      "name": "优酷视频",
+      "type": 3,
+      "api": "csp_youku",
+      "ext": "https://ghp.xptvhelper.link/https://raw.githubusercontent.com/gaoshangshuai/angel-plugins/refs/heads/main/yk.js"
+    }
+  ]
+}
