@@ -1,0 +1,103 @@
+{
+  "apiVersion": 1,
+  "sourceName": "My plugins",
+  "plugins": [
+    {
+      "pluginId": "youku",
+      "version": "1.1.1",
+      "platform": "youku",
+      "platformName": "优酷直播",
+      "platformDescription": "优酷直播 live.youku.com（支持账号登录与会员画质）",
+      "zipURL": "https://gcore.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/youku-1.1.1.zip",
+      "sha256": "880c638f31a202a91fb8cd7fe22ba34695e8a6f91301b9bdbb1866c317adbf24",
+      "auth": {
+        "required": false,
+        "credentialKinds": [
+          "cookie"
+        ],
+        "supportsStatusCheck": false,
+        "supportsValidation": false
+      },
+      "capabilities": {
+        "categories": {
+          "status": "available"
+        },
+        "rooms": {
+          "status": "available"
+        },
+        "playback": {
+          "status": "available",
+          "reason": "匿名走中转 720P；登录后额外提供 MTOP 会员画质线路，由服务端按会员态下发可用清晰度"
+        },
+        "search": {
+          "status": "available"
+        },
+        "roomDetail": {
+          "status": "available"
+        },
+        "liveState": {
+          "status": "available"
+        },
+        "shareResolve": {
+          "status": "available"
+        }
+      },
+      "icon": "assets/live_card_youku.png",
+      "iosIcon": "assets/live_card_youku.png",
+      "macosIcon": "assets/live_card_youku.png",
+      "tvosIcon": "assets/live_card_youku.png",
+      "tvosBigIcon": "assets/tv_youku_big.png",
+      "tvosSmallIcon": "assets/tv_youku_small.png",
+      "tvosBigIconDark": "assets/tv_youku_big_dark.png",
+      "tvosSmallIconDark": "assets/tv_youku_small_dark.png"
+    },
+    {
+      "pluginId": "xhs-news",
+      "version": "2.1.0",
+      "platform": "xhs-news",
+      "platformName": "官媒直播",
+      "platformDescription": "官媒直播双源版 v2.1.0。官网固定源新增 CDN 自动选路：央视会按运营商调度下发不同 CDN 域名，本版在设备当前网络上真实探测「官网自动 / 腾讯云 / 网宿」三套线路并把能连通的排到最前，解决手机 5G 一直缓冲 0KB 的问题；另有「央视全频道」12 路和「小红书原播」（需最新房号）",
+      "zipURL": "https://gcore.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/xhs-news-2.1.0.zip",
+      "sha256": "8e813e7b09651d2a0ad555f514da69699b2cb0564178cfbdf44ea316e77e8e67",
+      "auth": {
+        "required": false,
+        "credentialKinds": [],
+        "supportsStatusCheck": false,
+        "supportsValidation": false
+      },
+      "capabilities": {
+        "categories": {
+          "status": "available"
+        },
+        "rooms": {
+          "status": "available"
+        },
+        "playback": {
+          "status": "available",
+          "reason": "官网固定源：GET vdn.live.cntv.cn/api2/liveHtml5.do 返回 hls1(720P)/hls2(576P)，零登录零签名零 Referer 依赖。v2.1.0 针对手机 5G「一直缓冲 0KB」新增 CDN 自动选路：该接口按运营商调度下发不同 CDN 域名，插件会在设备当前网络真实探测「官网自动 / 腾讯云 / 网宿」三套线路，把连通的排到最前并解析成可直接播放的 media playlist 绝对地址；刷新保持用户所选线路。标题取 api.cntv.cn/epg/nowepg 官网节目单。另有「小红书原播」分类保留房号池（每 5 分钟重拉 rooms.json、粘贴链接自动学习）"
+        },
+        "search": {
+          "status": "available",
+          "reason": "支持官媒名 / CCTV 频道名 / 央视直播页链接 / 小红书直播分享链接 / App deeplink / 纯房号"
+        },
+        "roomDetail": {
+          "status": "available"
+        },
+        "liveState": {
+          "status": "available"
+        },
+        "shareResolve": {
+          "status": "available"
+        }
+      },
+      "icon": "assets/live_card_xhs_news.png",
+      "iosIcon": "assets/live_card_xhs_news.png",
+      "macosIcon": "assets/live_card_xhs_news.png",
+      "tvosIcon": "assets/live_card_xhs_news.png",
+      "tvosBigIcon": "assets/tv_xhs_news_big.png",
+      "tvosSmallIcon": "assets/tv_xhs_news_small.png",
+      "tvosBigIconDark": "assets/tv_xhs_news_big_dark.png",
+      "tvosSmallIconDark": "assets/tv_xhs_news_small_dark.png"
+    }
+  ]
+}
