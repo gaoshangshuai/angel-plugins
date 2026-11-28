@@ -1,0 +1,29 @@
+{
+  "updated": "2026-11-28",
+  "note": "A 版：6 个官媒各绑定一个稳定的【主播主页 ID】hosts，和一组房号池 channels。主页 ID 永不变；最省事的做法是把该账号的【完整主页链接】或【最新直播分享链接】直接粘到对应频道的值里（插件会自动提取 24 位 homeId / 数字房号），插件按主页 ID 探活、挑出正在播的那个，也可填数组保留多个历史房号。改完本文件后请访问一次 purge.jsdelivr.net 清 CDN 缓存，插件每 5 分钟自动重拉，所有设备免重装、免重启生效；临时看也可以直接在 App 搜索框粘贴链接。留空表示该频道尚未绑定。",
+  "hosts": {
+    "cctv": "6470182e000000002a03454a",
+    "kuaikan": "6407d96c000000001f032ae5",
+    "ckxx": "63c6460a0000000026007fcd",
+    "ysp": "5eac59390000000001006d11",
+    "xhw": "63301151000000002303b082",
+    "xxqg": "6790bdb1000000000403718b"
+  },
+  "homeUrls": {
+    "kuaikan": "https://xhslink.cn/o/6yaZwrcrzWG",
+    "ckxx": "https://xhslink.cn/o/KsBOj0CdnQ",
+    "ysp": "https://xhslink.cn/o/3cqsBWDriX0",
+    "xhw": "https://xhslink.cn/o/7K2hbaZI3rT",
+    "xxqg": "https://xhslink.cn/o/NDMr7OX0R0"
+  },
+  "channels": {
+    "cctv": [
+      "570559521790467377"
+    ],
+    "kuaikan": [],
+    "ckxx": [],
+    "ysp": [],
+    "xhw": [],
+    "xxqg": []
+  }
+}
