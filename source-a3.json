@@ -1,0 +1,105 @@
+{
+  "apiVersion": 1,
+  "sourceName": "My plugins",
+  "plugins": [
+    {
+      "pluginId": "youku",
+      "version": "1.1.1",
+      "platform": "youku",
+      "platformName": "优酷直播",
+      "platformDescription": "优酷直播 live.youku.com（支持账号登录与会员画质）",
+      "zipURL": "https://gcore.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/youku-1.1.1.zip",
+      "sha256": "880c638f31a202a91fb8cd7fe22ba34695e8a6f91301b9bdbb1866c317adbf24",
+      "auth": {
+        "required": false,
+        "credentialKinds": [
+          "cookie"
+        ],
+        "supportsStatusCheck": false,
+        "supportsValidation": false
+      },
+      "capabilities": {
+        "categories": {
+          "status": "available"
+        },
+        "rooms": {
+          "status": "available"
+        },
+        "playback": {
+          "status": "available",
+          "reason": "匿名走中转 720P；登录后额外提供 MTOP 会员画质线路，由服务端按会员态下发可用清晰度"
+        },
+        "search": {
+          "status": "available"
+        },
+        "roomDetail": {
+          "status": "available"
+        },
+        "liveState": {
+          "status": "available"
+        },
+        "shareResolve": {
+          "status": "available"
+        }
+      },
+      "icon": "assets/live_card_youku.png",
+      "iosIcon": "assets/live_card_youku.png",
+      "macosIcon": "assets/live_card_youku.png",
+      "tvosIcon": "assets/live_card_youku.png",
+      "tvosBigIcon": "assets/tv_youku_big.png",
+      "tvosSmallIcon": "assets/tv_youku_small.png",
+      "tvosBigIconDark": "assets/tv_youku_big_dark.png",
+      "tvosSmallIconDark": "assets/tv_youku_small_dark.png"
+    },
+    {
+      "pluginId": "xhs-news",
+      "version": "3.2.0",
+      "platform": "xhs-news",
+      "platformName": "小红书直播",
+      "platformDescription": "小红书直播。只保留一个「小红书直播」分类，列表只显示当前正在开播的官媒；6 个官媒全部绑定稳定主播主页 ID，开播自动出现。播放走直播间页 SSR 的原画 HLS + 3 路 FLV 备线，并额外提供 HLS HTTPS 备线应对明文流被拦截导致的 0KB",
+      "zipURL": "https://gcore.jsdelivr.net/gh/gaoshangshuai/angel-plugins@main/xhs-news-3.2.0.zip",
+      "sha256": "7c915f39aa5fdbc2735656b4c6d4597a8a6942e603ec8c8a0ca9b729205e6a41",
+      "auth": {
+        "required": false,
+        "credentialKinds": [
+          "cookie"
+        ],
+        "supportsStatusCheck": false,
+        "supportsValidation": false
+      },
+      "capabilities": {
+        "categories": {
+          "status": "available"
+        },
+        "rooms": {
+          "status": "available"
+        },
+        "playback": {
+          "status": "available",
+          "reason": "小红书直播间页 SSR：GET www.xiaohongshu.com/livestream/<roomId>?source=web_live_list（iPhone Safari UA + Referer app.xhs.cn）→ liveStream.roomData.roomInfo.pullConfig → h264[].master_url，原画 HLS 与 3 路 FLV 备线直连可播，零 Cookie 零 x-s 签名。A 版以稳定主播主页 ID 为锚点，登录态下优先从主播主页 SSR 发现本次开播房号"
+        },
+        "search": {
+          "status": "available",
+          "reason": "支持官媒名、小红书直播分享链接、主播主页链接、xhslink 短链，以及「@快看 在小红书… https://xhslink.cn/o/…」这类带账号名的整段分享口令（一次可批量绑定多个账号）"
+        },
+        "roomDetail": {
+          "status": "available"
+        },
+        "liveState": {
+          "status": "available"
+        },
+        "shareResolve": {
+          "status": "available"
+        }
+      },
+      "icon": "assets/live_card_xhs_news.png",
+      "iosIcon": "assets/live_card_xhs_news.png",
+      "macosIcon": "assets/live_card_xhs_news.png",
+      "tvosIcon": "assets/live_card_xhs_news.png",
+      "tvosBigIcon": "assets/tv_xhs_news_big.png",
+      "tvosSmallIcon": "assets/tv_xhs_news_small.png",
+      "tvosBigIconDark": "assets/tv_xhs_news_big_dark.png",
+      "tvosSmallIconDark": "assets/tv_xhs_news_small_dark.png"
+    }
+  ]
+}
